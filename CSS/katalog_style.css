@@ -1,0 +1,69 @@
+body{
+    background: linear-gradient(
+        110deg,
+        #F2921D,
+        #F2CD5C
+    );
+}
+.dugmeZaKretanjeUnazad{
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    background-color: firebrick;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 15px;
+    font-size: 100%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+}
+.dugmeZaKretanjeUnazad:hover{
+    background-color: red;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 40px 30px;
+    margin: 3vw;
+}
+.container{
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 30px 24px;
+}
+.lista{
+    list-style: none;
+    margin-left: -10px;
+}
+.porucivanje{
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 30px 24px;
+    text-align: center;
+}
+.nazivKnjige{
+    margin-bottom: 10%;
+}
+.brojPorudzbina{
+    margin-bottom: 10%;
+}
+.dugme{
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 15px 32px;
+    font-size: 100%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+}
+.dugme:hover{
+    background-color: black;
+}

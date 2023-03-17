@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog | e-BookShop</title>
+    <link rel="stylesheet" href = "../katalog_style.css">
+</head>
+<body>
+    <a href = "/nazad"><button class = "dugmeZaKretanjeUnazad"><=</button></a>
+    <div class = "grid">
+        {{# each knjiga }}
+        <div class = "container">
+            <ul class = "lista">
+                <li>Naziv knjige: {{ this.naziv }}</li>
+                <li>Autor: {{ this.autor }}</li>
+                <li>Žanr: {{ this.zanr }}</li>
+                <li>ISBN: {{ this.ISBN }}</li>
+                <li>Cena: {{ this.cena }}</li>
+                <li>Količina na stanju: {{ this.kolicina }}</li>
+            </ul>
+        </div>
+        {{/each}}
+        <div class = "porucivanje">
+            <h2 class = "naslov">Poručivanje knjige</h2>
+            <form action = "/porucivanjeKnjiga" method = "post">
+                <div class = "nazivKnjige">
+                    <label for = "naziv">Unesite naziv knjige koju želite da poručite:</label><br>
+                    <input type = "text" id = "naziv" name = "knjigaKojaSePorucuje" size = "20" required>
+                </div>
+                <div class = "brojPorudzbina">
+                    <label for = "brPorudzbina">Koliko primeraka želite da poručite?</label><br>
+                    <input type = "number" id = "brPorudzbina" name = "unosBrPorudzbina" required>
+                </div>
+                <button type = "submit" class = "dugme">Poruči</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

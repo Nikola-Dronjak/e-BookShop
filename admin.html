@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin | e-BookShop</title>
+    <link rel="stylesheet" href = "/admin_style.css">
+</head>
+<body>
+    <a href = "/odjavljivanje"><button class = "dugmeZaOdjavljivanje">Odjavi se</button></a>
+    <div class = "opcije">
+        <div class = "container">
+            <h2 class = "naslov">Dodavanje knjige</h2>
+            <form action = "/dodavanjeKnjiga" method = "post">
+                <div class = "nazivKnjige">
+                    <label for = "naziv">Naziv knjige:</label><br>
+                    <input type = "text" id = "naziv" name = "unosNaziva" size = "10" required>
+                </div>
+                <div class = "autorKnjige">
+                    <label for = "autor">Autor knjige:</label><br>
+                    <input type = "text" id = "autor" name = "unosAutora" size = "10" required>
+                </div>
+                <div class = "zanrKnjige">
+                    <label for = "zanr">Žanr knjige:</label><br>
+                    <input type = "text" id = "zanr" name = "unosZanra" size = "10" required>
+                </div>
+                <div class = "ISBN">
+                    <label for = "isbn">ISBN knjige:</label><br>
+                    <input type = "text" id = "isbn" name = "unosISBNa" size = "10" required>
+                </div>
+                <div class = "cenaKnjige">
+                    <label for = "cena">Cena knjige:</label><br>
+                    <input type = "text" id = "cena" name = "unosCene" size = "10" required>
+                </div>
+                <div class = "kolicinaKnjige">
+                    <label for = "kolicina">Količina:</label><br>
+                    <input type = "number" id = "kolicina" name = "unosKolicine" required>
+                </div>
+                <button type = "submit" class = "dugme">Dodaj</button>
+            </form>
+        </div>
+        <div class = "container">
+            <h2 class = "naslov">Ažuriranje knjige</h2>
+            <form action = "/azuriranjeKnjiga" method = "post">
+                <div class = "ISBN">
+                    <label for = "isbn">Unesite ISBN knjige koju želite da ažurirate:</label><br>
+                    <input type = "text" id = "isbn" name = "ISBNKnjigeZaAzuriranje" size = "10" required>
+                </div>
+                <div class = "nazivKnjige">
+                    <label for = "naziv">Novi naziv knjige:</label><br>
+                    <input type = "text" id = "naziv" name = "noviNaziv" size = "10" required>
+                </div>
+                <div class = "autorKnjige">
+                    <label for = "autor">Novi autor knjige:</label><br>
+                    <input type = "text" id = "autor" name = "noviAutor" size = "10" required>
+                </div>
+                <div class = "zanrKnjige">
+                    <label for = "zanr">Novi žanr knjige:</label><br>
+                    <input type = "text" id = "zanr" name = "noviZanr" size = "10" required>
+                </div>
+                <div class = "cenaKnjige">
+                    <label for = "cena">Nova cena knjige:</label><br>
+                    <input type = "text" id = "cena" name = "novaCena" size = "10" required>
+                </div>
+                <div class = "kolicinaKnjige">
+                    <label for = "kolicina">Količina:</label><br>
+                    <input type = "number" id = "kolicina" name = "novaKolicina" required>
+                </div>
+                <button type = "submit" class = "dugme">Ažuriraj</button>
+            </form>
+        </div>
+        <div class = "container">
+            <h2 class = "naslov">Uklanjanje knjige</h2>
+            <form action = "/brisanjeKnjige" method = "post">
+                <div class = "isbnKnjige">
+                    <label for = "isbnKnjige">ISBN knjige:</label><br>
+                    <input type = "text" id = "isbnKnjige" name = "isbnKnjigeZaBrisanje" size = "10" required>
+                </div>
+                <button type = "submit" class = "dugme">Ukloni</button>
+            </form>
+        </div>
+        <div class = "container">
+            <h2 class = "naslov">Uklanjanje korisnika</h2>
+            <form action = "/brisanjeKorisnika" method = "post">
+                <div class = "JMBGKorisnika">
+                    <label for = "jmbg">JMBG korisnika:</label><br>
+                    <input type = "text" id = "jmbg" name = "korisnikovJMBG" size = "10" required>
+                </div>
+                <button type = "submit" class = "dugme">Ukloni</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

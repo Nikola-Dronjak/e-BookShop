@@ -1,0 +1,83 @@
+body{
+    background: linear-gradient(
+        110deg,
+        #F2921D,
+        #F2CD5C
+    );
+}
+.dugmeZaOdjavljivanje{
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    background-color: firebrick;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 15px;
+    font-size: 100%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+}
+.dugmeZaOdjavljivanje:hover{
+    background-color: red;
+}
+.opcije{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    gap: 0 3vw;
+}
+.container{
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 3vh 3vw;
+    text-align: center;
+}
+.nazivKnjige{
+    margin-bottom: 10%;
+}
+.autorKnjige{
+    margin-bottom: 10%;
+}
+.zanrKnjige{
+    margin-bottom: 10%;
+}
+.ISBN{
+    margin-bottom: 10%;
+}
+.cenaKnjige{
+    margin-bottom: 10%;
+}
+.kolicinaKnjige{
+    margin-bottom: 10%;
+}
+input[type='number']{
+    width: 100px;
+}
+.isbnKnjige{
+    margin-bottom: 10%;
+}
+.JMBGKorisnika{
+    margin-bottom: 10%;
+}
+.dugme{
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 15px 32px;
+    font-size: 100%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+}
+.dugme:hover{
+    background-color: black;
+}

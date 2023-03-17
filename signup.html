@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registruj se</title>
+    <link rel="stylesheet" href="/signup_style.css">
+</head>
+<body>
+    <div class = "container">
+        <a href = "/nazad"><button class = "dugmeZaKretanjeUnazad"><=</button></a>
+        <h2 class = "naslov">Registracija</h2>
+        <div class = "flex">
+            <form action = "/dodavanjeKorisnika" method = "post">
+                <div class = "red">
+                    <div class = "imeKorisnika">
+                        <label for = "ime">Ime:</label><br>
+                        <input type = "text" id = "ime" name = "unosImena" size = "20" required>
+                    </div>
+                    <div class = "emailKorisnika">
+                        <label for = "mail">e-Pošta:</label><br>
+                        <input type = "email" id = "email" name = "unosEmaila" size = "20" required>
+                    </div>
+                </div>
+                <div class = "red">
+                    <div class = "prezimeKorisnika">
+                        <label for = "prezime">Prezime:</label><br>
+                        <input type = "text" id = "prezime" name = "unosPrezimena" size = "20" required>
+                    </div>
+                    <div class = "korisnickoImeKorisnika">
+                        <label for = "korisnickoIme">Korisničko ime:</label><br>
+                        <input type = "text" id = "korisnickoIme" name = "unosKorisnickogImena" size = "20" required>
+                    </div>
+                </div>
+                <div class = "red">
+                    <div class = "JMBGKorisnika">
+                        <label for = "jmbg">JMBG:</label><br>
+                        <input type = "text" id = "jmbg" name = "unosJMBGa" size = "20" required>
+                    </div>
+                    <div class = "sifraKorisnika">
+                        <label for = "sifra">Šifra:</label><br>
+                        <input type = "password" id = "sifra" name = "unosSifre" size = "20" required>
+                    </div>
+                </div>
+                <button type = "submit" class = "dugme">Registruj se</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

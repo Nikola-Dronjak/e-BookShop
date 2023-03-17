@@ -1,0 +1,29 @@
+body{
+    background: linear-gradient(
+        110deg,
+        #F2921D,
+        #F2CD5C
+    );
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.dugme{
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 15px 32px;
+    font-size: 100%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+}
+.dugme:hover{
+    background-color: black;
+}
